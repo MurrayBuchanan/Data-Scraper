@@ -7,8 +7,7 @@ import os.path
 
 # Scrape leaderboard data
 def scrape_leaderboard():
-    # url = "https://www.beatthestreet.me/leicester/leaderboards/"
-    url = "https://mb-4.com"
+    url = "https://mb-4.com" # EDIT THIS LINK TO CHANGE WHICH WEBSITE TO SCRAPE DATE FROM
     response = requests.get(url)
     soup = BeautifulSoup(response.content, 'html.parser')
     table = soup.find('table')
